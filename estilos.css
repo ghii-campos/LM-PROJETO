@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(215,174,238);
+background: radial-gradient(circle, rgba(215,174,238,1) 0%, rgba(152,148,233,1) 85%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@keyframes animacao{
+
+    0% {background-color:rgba(215,174,238,1);width:500px;}
+    50% {background-color:rgba(215,174,238,1);width:200px;}
+    100% {background-color:rgba(215,174,238,1);width:10px;}
+}
+
+.conteiner{
+    height: 720px;
+    background-color: violet;
+    animation-name: animacao;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+
+} 
+
+header{
+    position: fixed;
+}
